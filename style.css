@@ -1,0 +1,248 @@
+body {
+    font-family: arial;
+    background: #F5F3E7;
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: auto 1fr auto;
+  
+    }
+  }
+  
+  header {
+    background-color: #201e1e;
+    grid-column: span 3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    color: rgb(19, 18, 17);
+    align-items: center;
+    grid-column: span 2;
+  }
+  
+  nav {
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+  }
+   
+  
+  footer {
+    background-color: #201e1e;
+    grid-column: span 3;
+    text-align: center;
+    color: rgb(226, 214, 160);
+  }
+  
+  h1 {
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+ /* unvisited link */
+a:link {
+    color: rgb(153, 132, 15);
+  }
+  
+  /* visited link */
+  a:visited {
+    color:  rgb(153, 132, 15);
+  }
+
+  img.logo {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 500px;
+  }
+
+  .img1 {
+    transition:transform 0.25s ease;
+  }
+  
+  .img1:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+  .site-identity {
+    float: left;
+  }
+  
+  .site-identity h1 {
+    color: #ece6bc;
+    font-size: 1.7em;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .site-identity h4 {
+    color: rgb(245, 227, 124);
+    font-size: 0.7em;
+    margin: 2px;
+    display: inline-block;
+  }
+  
+  .site-identity img {
+    max-width: 95px;
+    float: left;
+    margin: 3px;
+  }
+  
+ /* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #3b3a30;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: rgb(255, 241, 152);
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #c2ba4c;
+    color: #3b3a30;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #c2ba4c;
+    color: #3b3a30;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 100%;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+/* FOOTER */
+
+footer {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  height: 50px;
+  text-decoration: none;
+  padding: 7px;
+  font-size: 1rem;
+  }
+
+ /* bienvenida */
+
+.post {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 25px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(245, 227, 124);
+    border-radius: 6px;
+}
+
+ /* buttons */
+
+ .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4caf4f27;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008bba25;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f443362a;
+}
+
+.button4 {
+  background-color: #4caf4f27;
+  color: black; 
+  border: 3px solid #4CAF50;
+}
+
+.button4:hover {
+  background-color: #4caf4f83;
+}
