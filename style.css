@@ -80,7 +80,7 @@ a:link {
     display: block;
     object-fit: cover;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 600px;
   }
 
   .img1 {
@@ -171,7 +171,6 @@ footer {
   display: inline-block;
   margin: 0;
   height: 50px;
-  text-decoration: none;
   padding: 7px;
   font-size: 1rem;
   }
@@ -243,4 +242,9 @@ footer {
 
 .button4:hover {
   background-color: #4caf4f83;
+}
+
+.copyright {
+  background-color: #201E1E;
+
 }
