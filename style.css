@@ -25,6 +25,14 @@ body {
     text-align: center;
     font-size: 1.5em;
   }
+
+  .header2 {
+    background-color: #5f5325;
+    grid-column: span 3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+  }
   
   main {
     flex: 1;
@@ -88,8 +96,6 @@ a:link {
   }
   
 
-}
-
   .site-identity {
     float: left;
   }
@@ -124,6 +130,7 @@ a:link {
     overflow: auto;
   }
   
+  
   /* Sidebar links */
   .sidebar a {
     display: block;
@@ -144,6 +151,33 @@ a:link {
   .sidebar a:hover:not(.active) {
     background-color: #c2ba4c;
     color: #3b3a30;
+  }
+
+  /* Sidebar2 */
+
+  .sidebar2 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #A38E40;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar2 a {
+    display: block;
+    color: rgb(255, 241, 152);
+    background-color: #7e6d32;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar2 a:hover:not(.active) {
+    background-color: #473f1c;
+    color: rgb(255, 241, 152);
   }
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -292,6 +326,40 @@ table, th, td {
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+   /* Create 2 equal columns that sits next to each other */
+   .column2 {
+    -ms-flex: 48%; /* IE10 */
+    flex: 48%;
+    max-width: 48%;
+    max-height: 100%;
+    padding: 0 4px;
+  }
+  
+  .column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 80%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column2 {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column2 {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
