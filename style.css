@@ -343,9 +343,11 @@ table, th, td {
   }
   
   .column2 img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 80%;
+    display: block;
+  max-width:650px;
+  max-height:900px;
+  width: auto;
+  height: auto;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
